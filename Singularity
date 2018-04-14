@@ -1,13 +1,8 @@
-Bootstrap:shub
-From:ubuntu
+Bootstrap: docker
+From: tensorflow/tensorflow
 
-apt-get -y install wget
-wget "https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh"
-install Miniconda3-latest-Linux-x86_64.sh miniconda3/
-rm Miniconda3-latest-Linux-x86_64.sh
-apt-get -y install git-core
-git clone https://github.com/GPflow/GPflow.git
-cd GPflow
-pip install .
-cd
-conda install -y -c conda-forge pymc3
+%post
+    apt-get -y install git-core
+    git clone https://github.com/GPflow/GPflow.git
+    cd GPflow
+    pip install .
