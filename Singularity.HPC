@@ -18,3 +18,4 @@ From: singularityhub/ubuntu
     git clone https://github.com/pymc-devs/pymc3
     cd pymc3
     pip install -r requirements.txt
+    apt-get -y install nano
