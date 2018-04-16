@@ -1,5 +1,5 @@
 Bootstrap: shub
-From: trusty/Singularity
+From: singularityhub/ubuntu
 
 %post
     apt-get -y install wget
