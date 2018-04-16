@@ -7,6 +7,9 @@ From: singularityhub/ubuntu
     mkdir miniconda3/
     install Miniconda3-latest-Linux-x86_64.sh miniconda3/
     rm Miniconda3-latest-Linux-x86_64.sh
+    sudo apt-get -y install python-pip python-dev build-essential 
+    sudo pip -y install --upgrade pip 
+    sudo pip -y install --upgrade virtualenv 
     apt-get -y install git-core
     git clone https://github.com/GPflow/GPflow.git
     cd GPflow
