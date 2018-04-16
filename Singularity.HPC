@@ -15,4 +15,6 @@ From: singularityhub/ubuntu
     cd GPflow
     pip install .
     cd
-    conda install -y -c conda-forge pymc3
+    git clone https://github.com/pymc-devs/pymc3
+    cd pymc3
+    pip install -r requirements.txt
