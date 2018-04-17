@@ -2,21 +2,22 @@ Bootstrap: shub
 From: singularityhub/ubuntu
 
 %post
-    apt-get -y install wget
-    wget "https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh"
-    mkdir /usr/local/miniconda3/
-    install Miniconda3-latest-Linux-x86_64.sh /usr/local/miniconda3/
+    apt-get update
+    apt-get update
+    apt-get -y upgrade
+    apt-get install python3.6 python3-pip idle3
+    pip3 install numpy
+    pip3 install spyder
     apt-get -y install python-setuptools python-dev build-essential 
     easy_install pip
-    pip install --upgrade virtualenv 
+    pip3 install --upgrade virtualenv 
     apt-get -y install git-core
     git clone https://github.com/GPflow/GPflow.git
     cd GPflow
-    pip install .
+    pip3 install .
     cd
     git clone https://github.com/pymc-devs/pymc3
     cd pymc3
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     apt-get -y install nano
-    pip install -U pytest 
-    bash
+    pip3 install -U pytest
