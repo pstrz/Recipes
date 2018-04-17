@@ -4,9 +4,8 @@ From: singularityhub/ubuntu
 %post
     apt-get -y install wget
     wget "https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh"
-    mkdir miniconda3/
-    install Miniconda3-latest-Linux-x86_64.sh miniconda3/
-    rm Miniconda3-latest-Linux-x86_64.sh
+    mkdir /usr/local/miniconda3/
+    install Miniconda3-latest-Linux-x86_64.sh /usr/local/miniconda3/
     apt-get -y install python-setuptools python-dev build-essential 
     easy_install pip
     pip install --upgrade virtualenv 
@@ -20,3 +19,4 @@ From: singularityhub/ubuntu
     pip install -r requirements.txt
     apt-get -y install nano
     pip install -U pytest 
+    bash
