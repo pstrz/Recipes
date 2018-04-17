@@ -5,6 +5,9 @@ From: singularityhub/ubuntu
     apt-get -y install python3
     apt-get -y install python3-setuptools python-dev build-essential
     easy_install3 pip
+    pip3 install numpy
+    pip3 install scipy
+    easy_install3 --upgrade pyDOE
     apt-get -y install git-core
     git clone https://github.com/GPflow/GPflow.git
     cd GPflow
