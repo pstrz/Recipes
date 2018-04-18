@@ -1,6 +1,0 @@
-Bootstrap: shub
-From: divetea/debian
-
-%post
-    apt-get -y install python3-setuptools python-dev build-essential
-    apt-get update

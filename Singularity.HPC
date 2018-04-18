@@ -10,7 +10,7 @@ From: singularityhub/ubuntu
     apt-get -y install git-core
     git clone https://github.com/GPflow/GPflow.git
     cd GPflow
-    pip3 install .
+    pip install .
     cd
     git clone https://github.com/pymc-devs/pymc3
     cd pymc3
