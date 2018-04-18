@@ -2,18 +2,15 @@ Bootstrap: shub
 From: singularityhub/ubuntu
 
 %post
-    apt-get -y install python-setuptools python-dev build-essential 
+    apt-get -y install python3-setuptools python-dev build-essential
+    easy_install3 pip==9.0.1
     apt-get update
-    easy_install pip
-    pip install --upgrade virtualenv
-    pip install pandas
+    apt-get install -y python3-dev
     apt-get -y install git-core
     git clone https://github.com/GPflow/GPflow.git
     cd GPflow
-    pip install .
+    pip3 install .
     cd
-    git clone https://github.com/pymc-devs/pymc3
-    cd pymc3
-    pip install -r requirements.txt
-    apt-get -y install nano
+    pip install -U pymc3
     pip install -U pytest
+  
