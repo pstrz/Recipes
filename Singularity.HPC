@@ -5,7 +5,7 @@ From: singularityhub/ubuntu
     apt-get -y install python3-setuptools python-dev build-essential 
     easy_install3 pip
     pip3 install --upgrade virtualenv 
-    apt-get install python3-pandas
+    pip3 install pandas
     apt-get -y install git-core
     git clone https://github.com/GPflow/GPflow.git
     cd GPflow
