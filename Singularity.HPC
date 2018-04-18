@@ -5,14 +5,3 @@ From: singularityhub/ubuntu
     apt-get -y install python3-setuptools python-dev build-essential 
     easy_install3 pip
     pip3 install --upgrade virtualenv 
-    pip3 install pandas
-    apt-get -y install git-core
-    git clone https://github.com/GPflow/GPflow.git
-    cd GPflow
-    pip3 install .
-    cd
-    git clone https://github.com/pymc-devs/pymc3
-    cd pymc3
-    pip3 install -r requirements.txt
-    apt-get -y install nano
-    pip3 install -U pytest 
