@@ -14,5 +14,4 @@ From: ubuntu
     cd
     pip3 install -U pymc3
     pip3 install -U pytest
-
-    
+    pip3 install --upgrade pyDOE
