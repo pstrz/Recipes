@@ -4,7 +4,6 @@ From: singularityhub/ubuntu
 %post
     apt-get -y install python3-setuptools python-dev build-essential
     easy_install3 pip==9.0.1
-    apt-get update
     apt-get install -y python3-dev
     apt-get -y install git-core
     git clone https://github.com/GPflow/GPflow.git
@@ -13,4 +12,4 @@ From: singularityhub/ubuntu
     cd
     pip install -U pymc3
     pip install -U pytest
-  
+    apt-get update
