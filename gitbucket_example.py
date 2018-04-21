@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Apr 21 09:32:30 2018
+I would like to nominate GitPython for the Single Worst Tutorial Ever Written
 
 @author: philstrzelecki
 """
@@ -11,12 +11,17 @@ A = np.ones([3,3])
 np.save('A', A)
 
 repo = Repo("")
+origin = repo.remote('origin')
 
-origin = repo.remote()
-origin.pull()
-
-
+repo.index.add(["A.npy"])
+repo.index.commit("test")
 
 origin.push()
 
-#none of this works :) 
+B = 2 * np.ones([3,3])
+np.save('A', B)
+
+origin.pull
+
+C = np.load('A.npy')
+print(C)
