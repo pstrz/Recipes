@@ -12,6 +12,6 @@ From: ubuntu
     export LC_all=C
     pip3 install .
     cd
-    pip3 install --upgrade pyDOE
     pip3 install -U pymc3
     pip3 install -U pytest
+    pip3 install pyDOE
