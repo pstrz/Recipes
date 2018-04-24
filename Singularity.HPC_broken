@@ -2,7 +2,6 @@ Bootstrap: docker
 From: ubuntu
 
 %post
-    apt-get -y install python3
     apt-get update
     apt-get update --fix-missing
     apt-get -y install python3-pip    
@@ -14,5 +13,4 @@ From: ubuntu
     cd
     pip3 install -U pymc3
     pip3 install -U pytest
-
-    
+    pip3 install -U pyDOE
