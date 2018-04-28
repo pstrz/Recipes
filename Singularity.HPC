@@ -31,4 +31,7 @@ From: ubuntu
     pip3 install -U pytest
 
 
-    pip3 install moe
+    git clone https://github.com/Yelp/MOE.git
+    cd MOE
+    pip install -r requirements.txt
+    python setup.py install
