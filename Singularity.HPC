@@ -30,4 +30,5 @@ From: ubuntu
 
     pip3 install -U pytest
 
-    
+
+    pip3 install moe
