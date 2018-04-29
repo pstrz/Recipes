@@ -18,8 +18,7 @@ From: ubuntu
 
     git clone https://github.com/Yelp/MOE.git
     cd MOE
-    pip3 install -r requirements.txt
-    python3 setup.py install
+    pip3 install .
     cd
     git clone https://github.com/GPflow/GPflow.git
 
