@@ -2,7 +2,7 @@ Bootstrap: docker
 
 From: ubuntu
 
-
+:16.04
 
 %post
 
@@ -40,6 +40,7 @@ From: ubuntu
     echo export PYTHONPATH=$PYTHONPATH:$SU2_RUN >> ~/.bashrc
     make
     make install
+    cd
 
 
 
