@@ -1,40 +1,20 @@
-Bootstrap: docker
-
-<<<<<<< HEAD
-From: ubuntu/
-ubuntu:16.04
-=======
-From: ubuntu
-
-
->>>>>>> parent of 2a5bcb6... 16.04
+Bootstrap:docker
+From:ubuntu:16.04
 
 %post
 
     apt-get -y install python3
-
     apt-get update
-
     apt-get update --fix-missing
-
     apt-get -y install python3-pip    
-
     apt-get -y install git-core
-
     git clone https://github.com/GPflow/GPflow.git
-
     cd GPflow
-
     export LC_all=C
-
     pip3 install .
-
     cd
-
     pip3 install -U pymc3
-
     pip3 install -U pytest
-
     git clone https://github.com/su2code/SU2.git
     cd SU2
     git reset --hard 09763bc9cbabf61a8cdca6fc705c8cf5099e670d
@@ -45,6 +25,3 @@ From: ubuntu
     echo export PYTHONPATH=$PYTHONPATH:$SU2_RUN >> ~/.bashrc
     make
     make install
-
-
-
